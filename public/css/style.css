@@ -1,0 +1,275 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+min-height:100vh;
+padding:40px;
+background:linear-gradient(135deg,#fdf2f4,#f8e1e7);
+}
+
+/* ===== CONTAINER ===== */
+.container{
+background:#ffffff;
+max-width:1100px;
+margin:auto;
+padding:30px;
+border-radius:22px;
+box-shadow:0 20px 40px rgba(128,0,32,0.12);
+}
+
+/* ===== HEADER ===== */
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+}
+
+.header h2{
+color:#800020;
+font-weight:600;
+}
+
+.user-info{
+background:#f3d6dc;
+padding:10px 18px;
+border-radius:30px;
+font-size:14px;
+color:#6d001a;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+text-decoration:none;
+display:inline-block;
+border:none;
+padding:10px 22px;
+border-radius:30px;
+cursor:pointer;
+transition:.3s ease;
+font-size:14px;
+margin:5px 5px 0 0;
+}
+
+.btn-primary{
+background:linear-gradient(to right,#800020,#5c0017);
+color:#fff;
+}
+
+.btn-secondary{
+background:#a10f2b;
+color:#fff;
+}
+
+.btn-danger{
+background:#5c0017;
+color:#fff;
+}
+
+/* ===== CARD ===== */
+.card{
+background:#fff5f7;
+border-radius:20px;
+padding:20px;
+margin-bottom:20px;
+box-shadow:0 10px 25px rgba(128,0,32,0.08);
+}
+
+/* ===== FORM ===== */
+form label{
+display:block;
+margin-top:15px;
+color:#6d001a;
+font-size:14px;
+}
+
+form input,
+form textarea,
+form select{
+width:100%;
+padding:12px;
+margin-top:6px;
+border-radius:14px;
+border:1px solid #e4b5bf;
+outline:none;
+background:#ffffff;
+transition:.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus{
+border-color:#800020;
+box-shadow:0 0 0 3px rgba(128,0,32,0.15);
+}
+
+/* ===== TABLE ===== */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:25px;
+border-radius:15px;
+overflow:hidden;
+}
+
+table thead{
+background:linear-gradient(to right,#800020,#5c0017);
+color:white;
+}
+
+table th,
+table td{
+padding:14px;
+text-align:center;
+font-size:14px;
+}
+
+table tbody tr:nth-child(even){
+background:#fae6ea;
+}
+
+table tbody tr:hover{
+background:#f3d6dc;
+}
+
+/* ===== STATUS ===== */
+.status{
+padding:6px 14px;
+border-radius:20px;
+font-size:12px;
+font-weight:500;
+color:white;
+}
+
+.status.baru{
+background:#d62839;
+}
+
+.status.diproses{
+background:#f4a261;
+color:black;
+}
+
+.status.selesai{
+background:#2e7d32;
+}
+
+/* ===== FILTER CARD ===== */
+.card-filter{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+margin-bottom:25px;
+}
+
+.filter-form{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:20px;
+}
+
+.form-group{
+display:flex;
+flex-direction:column;
+}
+
+.form-group label{
+margin-bottom:5px;
+font-weight:600;
+}
+
+/* ===== FILTER BUTTON ===== */
+.btn-filter{
+grid-column:span 3;
+padding:10px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* ===== TABLE CARD ===== */
+.card-table{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== DETAIL BUTTON ===== */
+.btn-detail{
+background:#800020;
+color:white;
+padding:6px 14px;
+border-radius:6px;
+text-decoration:none;
+}
+
+.btn-detail:hover{
+background:#5c0017;
+}
+
+/* ===== LOGOUT ===== */
+.logout{
+display:inline-block;
+margin-top:20px;
+text-decoration:none;
+color:#800020;
+font-weight:bold;
+}
+
+/* ===== BULLET LABEL ===== */
+.label-bullet{
+font-weight:600;
+display:block;
+margin-bottom:5px;
+position:relative;
+padding-left:16px;
+}
+
+.label-bullet::before{
+content:"";
+width:8px;
+height:8px;
+background:#800020;
+border-radius:50%;
+position:absolute;
+left:0;
+top:7px;
+}
+/* ===== FIX LOGIN JADI SAMPING ===== */
+
+.login-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.login-card{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    width:100%;
+    max-width:900px;
+}
+
+/* LOGO KIRI */
+.login-logo{
+    flex:1;
+    text-align:center;
+}
+
+.login-logo img{
+    max-width:280px;
+}
+
+/* FORM KANAN */
+.login-form{
+    flex:1;
+}
